@@ -1,2 +1,2 @@
 # Machine-learning
-This a repository for personal analysis on various datasets
+This a repository for personal analysis of various datasets as part of the CS50 final project 
