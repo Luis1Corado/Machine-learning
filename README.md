@@ -1,6 +1,6 @@
 # CS50 FINAL PROJECT 
 
-This is going to be a machine learning repository, appliying some basics models to datasets that are interestings.
+This is going to be a machine learning repository, appliying some basics models to datasets that i find interesting.
 
 ## Digit recognition
 
@@ -35,6 +35,83 @@ from sklearn.pipeline import make_pipeline
     <li>Silhouette score: 0.135 <br>
 </ul>
 
-## Age Estimation
+## Model for calculating bodyfat
+**[DATASET](https://www.kaggle.com/datasets/simonezappatini/body-fat-extended-dataset)** <br>
+
+It is a dataset containing body measurement for 436 people and the corresponding bodyfat value. With this dataset, I feed the data into a bayesian ridge model and a linear model for calculating the bodyfat index based on:
+
+<ol>
+    <li> Age </li>
+    <li> Weight </li>
+    <li> Height </li>
+    <li> Neck width </li>
+    <li> Chest width </li>
+    <li> Abdomen </li>
+    <li> Hip </li>
+    <li> Thigh </li>
+    <li> Knee </li>
+    <li> Ankle </li>
+    <li> Biceps </li>
+    <li> Forearm </li>
+    <li> Wrist </li>
+</ol>
+
+### Results 
+
+The Bayesian Ridge R2 score was : 0.739 <br>
+The Linear Regression score R2 was: 0.738
+
+The residuals vs Predicted values graph is: 
+
+![Alt text](image.png)
 
 ## Predicting diabetes
+
+Diabetes is an opportune disease which has large wealth of data available and has with it huge complications. There is a need for a better and a more accurate approach in the diagnosis of the disease.
+
+The data were collected from the Iraqi society, as they data were acquired from the laboratory of Medical City Hospital and (the Specializes Center for Endocrinology and Diabetes-Al-Kindy Teaching Hospital)The data that have been entered initially into the system are: 
+
+<ul>
+<li> No. of Patient 
+<li> Sugar Level Blood 
+<li> Age 
+<li> Gender 
+<li> Creatinine ratio(Cr) 
+<li> Body Mass Index (BMI) 
+<li> Urea, Cholesterol (Chol) 
+<li> Fasting lipid profile 
+<li> including total 
+<li> LDL 
+<li> VLDL
+<li> Triglycerides(TG) 
+<li> HDL Cholesterol 
+<li> HBA1C
+<li> Class (the patient's diabetes disease class may be Diabetic, Non-Diabetic, or Predict-Diabetic).
+</ul>
+
+<br>
+[DATASET](https://www.kaggle.com/datasets/aravindpcoder/diabetes-dataset).
+
+### Results 
+
+The model that was applied was a K neighbors classifier, for classifiying the data into 3 classes.  DIabetic , Non - Diabetic or predict-Diabetic.
+
+We can visualize the results with a confusion matrix that displays the correct predicted balues as wel as the incorrect ones. 
+
+![Alt text](image-1.png)
+
+Other useful metrics are accuracy , precision, recall and F1 score. 
+
+              precision    recall  f1-score   support
+
+           0       0.65      0.69      0.67        29
+           1       0.33      0.18      0.23        17
+           2       0.95      0.97      0.96       288
+
+    accuracy                           0.91       334
+
+**Accuracy** is a Classification measure in Machine Learning that represents a percentage of correct predictions made by a model. <br>
+
+**Precision** is the percentage of positives that were actually positives.
+
+**Recall** is the percentage of how many positive results our model captures from the real total of positives. 
