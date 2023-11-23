@@ -35,6 +35,6 @@ from sklearn.pipeline import make_pipeline
     <li>Silhouette score: 0.135 <br>
 </ul>
 
-## Age stimation
+## Age Estimation
 
 ## Predicting diabetes
